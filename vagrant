@@ -1,0 +1,21 @@
+#!bash
+
+# ### VAGRANT ###
+
+alias vs="vagrant suspend"
+alias vu="vagrant up"
+alias vus="vagrant up; vagrant ssh;"
+
+# global suspend
+Vs () {
+    m=$(vagrant global-status | grep running | awk '{print $1}')
+    vagrant suspend $m
+}
+# global suspend & vagrant up
+Vsvu () {
+    Vs && vu
+}
+# global suspend and vagrant up & vagrant ssh
+Vsvus () {
+    Vs && vus
+}

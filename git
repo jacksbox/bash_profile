@@ -1,0 +1,54 @@
+#!bash
+
+# ### GIT ###
+
+# git current branch name
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# git tab completion
+source ~/.git-completion.bash
+
+# ### Git Aliases ###
+alias ga='git add'
+__git_complete ga _git_add
+alias gaa='git add .'
+alias gaaa='git add --all'
+alias gau='git add --update'
+alias gb='git branch'
+alias gbd='git branch --delete '
+alias gc='git commit'
+__git_complete gc _git_commit
+alias gcm='git commit --message'
+alias gcf='git commit --fixup'
+alias gca='git commit --amend'
+alias gco='git checkout'
+__git_complete gco _git_checkout
+alias gcob='git checkout -b'
+__git_complete gcob _git_checkout
+alias gcom='git checkout master'
+alias gcos='git checkout staging'
+alias gcod='git checkout develop'
+alias gd='git diff'
+alias gda='git diff HEAD'
+alias gi='git init'
+alias glg='git log --graph --oneline --decorate --all'
+alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias gm='git merge --no-ff'
+alias gma='git merge --abort'
+alias gmc='git merge --continue'
+alias gp='git pull'
+__git_complete gp _git_pull
+alias gpr='git pull --rebase'
+__git_complete gp _git_pull
+alias gr='git rebase'
+__git_complete gr _git_rebase
+alias gs='git status'
+alias gss='git status --short'
+alias gst='git stash'
+alias gsta='git stash apply'
+alias gstd='git stash drop'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gsts='git stash save'

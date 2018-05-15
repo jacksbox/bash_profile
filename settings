@@ -1,0 +1,8 @@
+#!bash
+
+# ### SETTINGS ###
+
+export TITLEBAR='\e]0;\h: ${PWD/$HOME/~}\a'
+
+# ### HISTORY ###
+HISTFILESIZE=10000000

@@ -1,0 +1,29 @@
+#!bash
+
+# ### ALIAS ###
+
+# bash edit
+alias bash_edit="subl ~/.bash"
+alias bash_reload=". ~/.bash_profile"
+
+# handy stuff
+alias goto_projects="cd ~/projects"
+alias fe="cd ~/projects/frontend-components/rtl-frontend-components"
+alias bl="cd ~/projects/blacklisting-tool"
+
+alias s="subl ."
+
+alias t="yarn test"
+alias l="yarn lint"
+
+alias ls='ls -GFh'
+alias ll="ls -al"
+
+mkcd() {
+    mkdir $1
+    cd $1
+}
+
+alias hosts_edit="subl /etc/hosts"
+
+alias flushRoutes="sh ˜/Documents/bash/flush.sh"
