@@ -41,6 +41,8 @@ alias gmc='git merge --continue'
 alias gp='git pull'
 __git_complete gp _git_pull
 alias gpr='git pull --rebase'
+alias gps='git push'
+alias gpsf='git push -f'
 __git_complete gp _git_pull
 alias gr='git rebase'
 __git_complete gr _git_rebase
