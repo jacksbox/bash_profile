@@ -13,6 +13,8 @@ alias bl="cd ~/projects/blacklisting-tool"
 
 alias s="subl ."
 
+alias c="clear"
+
 alias t="yarn test"
 alias l="yarn lint"
 
