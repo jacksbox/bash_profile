@@ -25,13 +25,13 @@ turky="\e[0;36m"
 turkyGlow="\e[1;36m"
 signal="\e[1;37m"
 
- PS1="${grayGlow}\u" # user
-PS1+="${turky}@" # @
-PS1+="${grayGlow}\h" # host
-PS1+="${turky}: " # :
-PS1+="${turky}\W" # path
-PS1+="${orangeGlow} \$(parse_git_branch)" # git branch
+ PS1="\[${grayGlow}\]\u" # user
+PS1+="\[${turky}\]@" # @
+PS1+="\[${grayGlow}\]\h" # host
+PS1+="\[${turky}\]: " # :
+PS1+="\[${turky}\]\W" # path
+PS1+="\[${orangeGlow}\] \$(parse_git_branch)" # git branch
 PS1+="\n" # newline... no shit sherlock
-PS1+="${turkyGlow}\$ " # $
-PS1+="${grayGlow2}" #
+PS1+="\[${turkyGlow}\]\$ " # $
+PS1+="\[${grayGlow2}\]" #
 export PS1
