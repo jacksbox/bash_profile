@@ -7,10 +7,6 @@ alias bash_edit="subl ~/.bash"
 alias bash_reload=". ~/.bash_profile"
 
 # handy stuff
-alias goto_projects="cd ~/projects"
-alias fe="cd ~/projects/frontend-components/rtl-frontend-components"
-alias bl="cd ~/projects/blacklisting-tool"
-
 alias s="subl ."
 
 alias c="clear"
@@ -27,5 +23,3 @@ mkcd() {
 }
 
 alias hosts_edit="subl /etc/hosts"
-
-alias flushRoutes="sh ˜/Documents/bash/flush.sh"

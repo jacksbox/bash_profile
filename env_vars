@@ -1,22 +1,3 @@
 #!bash
 
 # ### ENVIRONMENT VARS ###
-
-# ### PATH ###
-#
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Python/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
-
-# Set PATH to php5
-PATH="/usr/local/php5/bin:${PATH}"
-export PATH
-
-# Set PATH for eslint
-PATH="/usr/local/bin/eslint:${PATH}"
-export PATH
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"

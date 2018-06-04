@@ -8,7 +8,7 @@ parse_git_branch() {
 }
 
 # git tab completion
-source ~/.git-completion.bash
+source libs/.git-completion.bash
 
 # ### Git Aliases ###
 alias ga='git add'
