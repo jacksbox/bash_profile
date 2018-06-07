@@ -9,6 +9,8 @@ alias bash_reload=". ~/.bash_profile"
 # handy stuff
 alias s="subl ."
 
+alias cd..='cd ..'
+alias ..='cd ..'
 alias c="clear"
 
 alias t="yarn test"
@@ -16,6 +18,8 @@ alias l="yarn lint"
 
 alias ls='ls -GFh'
 alias ll="ls -al"
+
+alias f='open -a Finder ./'
 
 mkcd() {
     mkdir $1
