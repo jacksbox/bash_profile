@@ -6,3 +6,9 @@ export TITLEBAR='\e]0;\h: ${PWD/$HOME/~}\a'
 
 # ### HISTORY ###
 HISTFILESIZE=10000000
+
+# ignoreboth: ignorespace + ignoredups
+# ignorespace: ignore lines starting with space
+# ignoredups: ignore entrys which are equal to previouse entry
+# erasedups: remove all previouse dups
+export HISTCONTROL=ignoreboth:erasedups
