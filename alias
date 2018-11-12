@@ -8,6 +8,8 @@ alias bash_reload=". ~/.bash_profile"
 
 # handy stuff
 alias s="subl ."
+# handy stuff
+alias v="code ."
 
 alias cd..='cd ..'
 alias ..='cd ..'
@@ -21,9 +23,19 @@ alias ll="ls -al"
 
 alias f='open -a Finder ./'
 
+alias fix_pointer='git lfs uninstall && git reset --hard && git lfs install && git lfs pull'
+
 mkcd() {
     mkdir $1
     cd $1
 }
 
 alias hosts_edit="subl /etc/hosts"
+
+# shop web client
+alias dstart="docker/start-dev-container"
+
+# docker
+dockerssh() {
+  docker exec -it $1 bash
+}

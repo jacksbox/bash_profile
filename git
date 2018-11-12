@@ -43,6 +43,7 @@ __git_complete gp _git_pull
 alias gpr='git pull --rebase'
 alias gps='git push'
 alias gpsf='git push -f'
+alias gpsu='git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"'
 __git_complete gp _git_pull
 alias gr='git rebase'
 __git_complete gr _git_rebase
