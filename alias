@@ -32,8 +32,9 @@ mkcd() {
 
 alias hosts_edit="subl /etc/hosts"
 
-# shop web client
-alias dstart="docker/start-dev-container"
+alias d="docker"
+alias dp="docker ps"
+alias dpa="docker ps --all"
 
 # docker
 dockerssh() {
