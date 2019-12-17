@@ -10,6 +10,8 @@ parse_git_branch() {
 # git tab completion
 source ~/.bash/libs/.git-completion.bash
 
+alias g='g'
+
 # ### Git Aliases ###
 alias ga='git add'
 __git_complete ga _git_add
@@ -42,7 +44,7 @@ alias gp='git pull'
 __git_complete gp _git_pull
 alias gpr='git pull --rebase'
 alias gps='git push'
-alias gpsf='git push -f'
+alias gpsf='git push --force-with-lease'
 alias gpsu='git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)"'
 __git_complete gp _git_pull
 alias gr='git rebase'
@@ -55,3 +57,7 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+
+alias gpm='gcom && gp'
+alias gmm='git merge master'
+alias gpmm='gcom && gp && gco - && gmm'

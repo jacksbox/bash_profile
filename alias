@@ -3,7 +3,7 @@
 # ### ALIAS ###
 
 # bash edit
-alias bash_edit="subl ~/.bash"
+alias bash_edit="v ~/.bash"
 alias bash_reload=". ~/.bash_profile"
 
 # handy stuff
@@ -22,6 +22,8 @@ alias ls='ls -GFh'
 alias ll="ls -al"
 
 alias f='open -a Finder ./'
+
+alias rmrf='rm -Rf'
 
 alias fix_pointer='git lfs uninstall && git reset --hard && git lfs install && git lfs pull'
 

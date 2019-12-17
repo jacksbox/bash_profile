@@ -1,3 +1,43 @@
 #!bash
 
 # ### ENVIRONMENT VARS ###
+
+# ### PATH ###
+#
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+# PATH="/Library/Python/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+# export PATH
+
+# Set PATH to php5
+# PATH="/usr/local/php5/bin:${PATH}"
+# export PATH
+
+# Set PATH for eslint
+# PATH="/usr/local/bin/eslint:${PATH}"
+# export PATH
+
+# NPM TOKEN
+# NPM_TOKEN="xxx"
+# export NPM_TOKEN
+
+# GH_REGISTRY_TOKEN="xxx"
+# export GH_REGISTRY_TOKEN
+
+# NVM
+if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+fi
+
+# NVM autoload
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+
+cd() { builtin cd "$@"; 'load-nvmrc'; }
