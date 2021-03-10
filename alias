@@ -13,6 +13,7 @@ alias v="code ."
 
 alias cd..='cd ..'
 alias ..='cd ..'
+
 alias c="clear"
 
 alias t="yarn test"
@@ -32,11 +33,12 @@ mkcd() {
     cd $1
 }
 
-alias hosts_edit="subl /etc/hosts"
+alias hosts_edit="code /etc/hosts"
 
 alias d="docker"
 alias dp="docker ps"
 alias dpa="docker ps --all"
+alias dc="docker-compose"
 
 # docker
 dockerssh() {
