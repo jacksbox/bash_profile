@@ -25,19 +25,19 @@
 # export GH_REGISTRY_TOKEN
 
 # NVM
-if [ -f /usr/local/opt/nvm/nvm.sh ]; then
-  export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
-fi
+# if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+#   export NVM_DIR="$HOME/.nvm"
+#   . "/usr/local/opt/nvm/nvm.sh"
+# fi
 
 # NVM autoload
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
+# load-nvmrc() {
+#   if [[ -f .nvmrc && -r .nvmrc ]]; then
+#     nvm use
+#   elif [[ $(nvm version) != $(nvm version default)  ]]; then
+#     echo "Reverting to nvm default version"
+#     nvm use default
+#   fi
+# }
 
-cd() { builtin cd "$@"; 'load-nvmrc'; }
+# cd() { builtin cd "$@"; 'load-nvmrc'; }

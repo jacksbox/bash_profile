@@ -2,7 +2,7 @@
 
 # ### SETTINGS ###
 
-export TITLEBAR='\e]0;\h: ${PWD/$HOME/~}\a'
+export TITLEBAR='${PWD/$HOME/~}\a'
 
 # ### HISTORY ###
 HISTFILESIZE=10000000
