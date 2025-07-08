@@ -3,21 +3,16 @@
 # ### ALIAS ###
 
 # bash edit
-alias bash_edit="v ~/.bash"
+alias bash_edit='(cd ~/.bash && code .)'
 alias bash_reload=". ~/.bash_profile"
 
-# handy stuff
-alias s="subl ."
-# handy stuff
+# vscode edit
 alias v="code ."
 
 alias cd..='cd ..'
 alias ..='cd ..'
 
 alias c="clear"
-
-alias t="yarn test"
-alias l="yarn lint"
 
 alias ls='ls -GFh'
 alias ll="ls -al"
@@ -26,21 +21,7 @@ alias f='open -a Finder ./'
 
 alias rmrf='rm -Rf'
 
-alias fix_pointer='git lfs uninstall && git reset --hard && git lfs install && git lfs pull'
-
 mkcd() {
     mkdir $1
     cd $1
-}
-
-alias hosts_edit="code /etc/hosts"
-
-alias d="docker"
-alias dp="docker ps"
-alias dpa="docker ps --all"
-alias dc="docker-compose"
-
-# docker
-dockerssh() {
-  docker exec -it $1 bash
 }
